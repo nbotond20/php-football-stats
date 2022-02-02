@@ -1,0 +1,29 @@
+.profile-pic{
+    border: none;
+    margin-bottom: 0.5em;
+}
+.bottom-bar{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+.bottom-bar i{
+    cursor: pointer;
+}
+.bottom-bar a{
+    text-decoration: none;
+    color: black;
+}
+.dark-mode .bottom-bar a{
+    text-decoration: none;
+    color: white;
+}
+.dark-mode .username{
+    color: grey;
+}
+.team-name{
+    padding-inline: 20px;
+}

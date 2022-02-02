@@ -1,0 +1,258 @@
+:root {
+    --title-and-scrollbar-thumb-hover-color: #5fbb76;
+    --scrollbar-thumb-color: #529c64;
+    --bg-color: #ebf6f1;
+    --card-bg-color: #ffffff;
+    --inner-card-color: rgba(0, 238, 0, 0.1);
+    --card-heigth: 300px;
+}
+
+.dark-mode{
+    --title-and-scrollbar-thumb-hover-color: #2e5e3a;
+    --scrollbar-thumb-color: #274d31;
+    --bg-color: #5e6461;
+}
+
+.dark-mode .card{
+    background-color: #3030309a;
+}
+.dark-mode .home-section{
+    color: white !important;
+}
+.dark-mode .link{
+    color: white;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    width: 20px;
+    background-color: var(--bg-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--title-and-scrollbar-thumb-hover-color);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-color);
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    row-gap: 1em !important;
+    position: relative;
+    background: var(--bg-color);
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    padding: 2em 0;
+}
+
+.wrapper{
+    min-width: 90%;
+    max-width: calc(100% - 78px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    gap: 2em;
+}
+
+@media (max-width: 1320px) {
+    .wrapper{ 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+@media (max-width: 910px) {
+    .wrapper{ 
+        grid-template-columns: 1fr; 
+    }
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg-color);
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    border-radius: 0.5em;
+    margin-inline: auto;
+    min-width: 300px;
+    max-width: 320px;
+    min-height: 400px;
+    max-height: 400px;
+    position: relative;
+}
+
+.profile-pic{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed rgb(0, 0, 0);
+}
+
+.team-name{
+    display: flex;
+    text-align: center;
+    width: fit-content;
+}
+
+.stats{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.win {
+    color: rgb(4, 196, 4);
+}
+.draw{
+    color: rgb(255, 166, 0);
+}
+.lose {
+    color: red;
+}
+.num{
+    margin-left: 0.2em;
+    color: black;
+}
+.dark-mode .num{
+    color: white;
+}
+
+.heart {
+    width: 35px;
+    height: 35px;
+}
+.stats a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    margin-inline: auto;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.svg-item {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    animation: donutfade 1s;
+    margin-top: 1em;
+    max-width: 30%;
+    display:inline-block;
+}
+
+@keyframes donutfade {
+  /* this applies to the whole svg item wrapper */
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .svg-item {
+        width: 80%;
+    }
+}
+
+.donut-ring {
+    stroke: #EBEBEB;
+}
+
+.donut-segment {
+    transform-origin: center;
+    stroke: #FF6200;
+}
+
+.donut-segment-2 {
+    stroke: #60da7e;
+    /* animation: donut1 3s; */
+}
+
+.segment-1{fill:#ccc;}
+.segment-2{fill:aqua;}
+
+.donut-percent {
+    animation: donutfadelong 1s;
+}
+
+@keyframes donutfadelong {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes donut1 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 21, 79;
+    }
+}
+
+.donut-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #FF6200;
+}
+.donut-text-1 {
+    fill: #60da7e;
+}
+
+.donut-label {
+    font-size: 0.28em;
+    font-weight: 700;
+    line-height: 1;
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.donut-percent {
+    font-size: 0.5em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+.donut-data {
+    font-size: 0.25em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    text-align: center;
+    text-anchor: middle;
+    color:#666;
+    fill: #666;
+    animation: donutfadelong 1s;
+}
+.dark-mode .donut-data{
+    color:white;
+    fill: white;
+}

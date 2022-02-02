@@ -1,0 +1,52 @@
+{
+    "bayern" : {
+        "id": "bayern",
+        "name": "Bayern München",
+        "icon": "bayern.png"
+    },
+    "liverpool" : { 
+        "id": "liverpool",
+        "name": "Liverpool FC",
+        "icon": "liverpool.png"
+    },
+    "realmadrid" : { 
+        "id": "realmadrid",
+        "name": "Real Madrid",
+        "icon": "realmadrid.png"
+    },
+    "mancity" : { 
+        "id": "mancity",
+        "name": "Manchester City",
+        "icon": "mancity.png"
+    },
+    "intermilan" : { 
+        "id": "intermilan",
+        "name": "Inter Milan",
+        "icon": "intermilan.png"
+    },
+    "ajax" : { 
+        "id": "ajax",
+        "name": "Ajax Amsterdam",
+        "icon": "ajax.png"
+    },
+    "chelsea" : { 
+        "id": "chelsea",
+        "name": "Chelsea FC",
+        "icon": "chelsea.png"
+    },
+    "parissaint" : { 
+        "id": "parissaint",
+        "name": "Paris Saint-Germain",
+        "icon": "parissaint.png"
+    },
+    "juventus" : { 
+        "id": "juventus",
+        "name": "Juventus",
+        "icon": "juventus.png"
+    },
+    "arsenal" : { 
+        "id": "arsenal",
+        "name": "Arsenal FC",
+        "icon": "arsenal.png"
+    }
+}

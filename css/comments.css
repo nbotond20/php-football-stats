@@ -1,0 +1,9 @@
+.main-card{
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.comments h2 a{
+    text-decoration: none;
+    color: #5fbb76;
+}

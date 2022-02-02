@@ -1,0 +1,116 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: var(--bg-color);
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    border-radius: 1em;
+    margin-top: 3em !important;
+    padding-top: 0.5em;
+    transition: width 0.5s ease-in-out;
+    height: 215px;
+}
+
+@media (max-width: 1300px) {
+    .card {
+        width: 70%;
+    }
+    
+    .team1-score, .team2-score{
+        width: 15%;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 85%;
+    }
+    .team1-score, .team2-score{
+        width: 20%;
+    }
+}
+
+.matches{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left, .right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    width: 30%;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 0.5em;
+}
+
+.team1-score, .team2-score{
+    width: 10%;
+}
+
+input{
+    border: none;
+    border-radius: 1em;
+    background-color: rgba(128, 128, 128, 0.507);
+    outline: none;
+}
+
+.submit{
+    width: 15%;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #fff;
+    background: #529c64;
+    border: 0;
+    font-size: 14px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em !important;
+}
+
+.error{
+    margin: 0.3em;
+    color: rgba(255, 0, 0, 0.459);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dark-mode .error{
+    color: rgba(255, 0, 0, 0.7);
+}
+
+*::-webkit-calendar-picker-indicator{
+    border-radius: 1em;
+}
