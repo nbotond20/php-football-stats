@@ -1,1 +1,37 @@
-{"61cce70d1529e":{"id":"61cce70d1529e","name":"Nuszpl Botond","username":"nbotond","pwd":"$2y$10$9jmFRX03VqiqYEVOjjXXy.zLvoxOFxS.lLh7up8S15hLKCVpGAryS","email":"nuszplbotond@gmail.com","roles":["user","admin"],"favorites":{"2":"chelsea","6":"liverpool"}},"61ce148e9bf88":{"id":"61ce148e9bf88","name":"admin","username":"admin","pwd":"$2y$10$o1bP9Y0d6iIEhK\/iM6tePeFw8RAo2za.qGSOGrjZ.kPYYUjH1cQai","email":"admin@elstadion.com","roles":["user","admin"],"favorites":{"4":"intermilan","8":"arsenal","9":"parissaint","10":"ajax"}},"61dad6d87f12b":{"id":"61dad6d87f12b","name":"Mate","username":"mate","pwd":"$2y$10$NJpix6gYNC.fJ6i0ToA8EutbY60il96kFYoNElnukN3gZpIGbNPeq","email":"mate@gmail.com","roles":["user"],"favorites":["bayern","mancity"]}}
+{
+    "61cce70d1529e": {
+        "email": "nuszplbotond@gmail.com",
+        "favorites": {
+            "2": "chelsea",
+            "6": "liverpool"
+        },
+        "id": "61cce70d1529e",
+        "name": "Nuszpl Botond",
+        "pwd": "$2y$10$9jmFRX03VqiqYEVOjjXXy.zLvoxOFxS.lLh7up8S15hLKCVpGAryS",
+        "roles": ["user", "admin"],
+        "username": "nbotond"
+    },
+    "61ce148e9bf88": {
+        "email": "admin@elstadion.com",
+        "favorites": {
+            "4": "intermilan",
+            "8": "arsenal",
+            "9": "parissaint",
+            "10": "ajax"
+        },
+        "id": "61ce148e9bf88",
+        "name": "admin",
+        "pwd": "$2y$10$o1bP9Y0d6iIEhK/iM6tePeFw8RAo2za.qGSOGrjZ.kPYYUjH1cQai",
+        "roles": ["user", "admin"],
+        "username": "admin"
+    },
+    "61dad6d87f12b": {
+        "email": "mate@gmail.com",
+        "favorites": ["bayern", "mancity"],
+        "id": "61dad6d87f12b",
+        "name": "Mate",
+        "pwd": "$2y$10$NJpix6gYNC.fJ6i0ToA8EutbY60il96kFYoNElnukN3gZpIGbNPeq",
+        "roles": ["user"],
+        "username": "mate"
+    }
+}
